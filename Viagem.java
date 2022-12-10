@@ -1,6 +1,5 @@
 import java.util.Date;
 
-
 public class Viagem
 {
     private int idViagem;
@@ -18,8 +17,6 @@ public class Viagem
         this.dataInicial = dataInicial;
         this.dataFinal = dataFinal;
     }
-
-
 
     public int getIdViagem()
     {
@@ -42,16 +39,12 @@ public class Viagem
         return kmPercorrido;
     }
 
-
-
-
     public Boolean iniciarViagem(Veiculo veiculo)
     {
         if(this.veiculo != null && veiculo.getStatus() == 'V')
         {
             return false;
         }
-
         this.veiculo = veiculo;
         this.dataInicial = new Date();
         veiculo.registrarViagem();
@@ -70,9 +63,6 @@ public class Viagem
         return this.kmPercorrido = kmOdometro + veiculo.getKmOdometro();
     }
 
-
-
-
     @Override
     public String toString() {
         return  "\nId viagem....: " + this.idViagem +
@@ -81,6 +71,4 @@ public class Viagem
                 "\nData Final...: " + this.dataFinal +
                 "\nKm Percorrido: " + this.kmPercorrido;
     }
-
-
 }

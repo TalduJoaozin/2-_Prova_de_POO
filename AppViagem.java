@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 public class AppViagem
 {
     public static Viagem viagem;
@@ -20,7 +19,8 @@ public class AppViagem
         Veiculo foundVeiculo = pesquisarVeiculoPorId(3);
         if(foundVeiculo == null)
         {
-            System.out.println("Veiculo nao encontrado");                 }
+            System.out.println("Veiculo nao encontrado");
+        }
         else
         {
             viagem.iniciarViagem(foundVeiculo);
@@ -32,7 +32,8 @@ public class AppViagem
         foundVeiculo = pesquisarVeiculoPorId(2);
         if(foundVeiculo == null)
         {
-            System.out.println("Veiculo nao encontrado");                 }
+            System.out.println("Veiculo nao encontrado");
+        }
         else
         {
             viagem.iniciarViagem(foundVeiculo);
